@@ -1,0 +1,4 @@
+Git stash apply Leaves the stashed changes in the stash list. Git applies the most recent stash to your working directory, but keeps the stash list. This mean we can apply same stash multiple time .
+
+Git stash pop removes the stash list .Git applies the most recent stash to you working directory and removes it from the stash list ,we can only apply each stash once,and stashed changes cannot be used.
+                 
