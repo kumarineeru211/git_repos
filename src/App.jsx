@@ -1,13 +1,30 @@
-import React from 'react'
+import React from 'react';
+import Card from './Card';
 
-export default function App() {
+
+
+ export default function App() {
+  const user1 = {
+    name: 'Amit',
+    image: 'https://images.pexels.com/photos/1183266/pexels-photo-1183266.jpeg',
+    designation: 'Graphic Designer',
+    description: 'Highly creative and multitalented Graphic Designer with extensive experience in multimedia, marketing, and print design.',
+  };
+
+  const user2 = {
+    name: 'Ruhi',
+    image: 'https://images.pexels.com/photos/3775131/pexels-photo-3775131.jpeg?auto=compress&cs=tinysrgb&w=126&h=75&dpr=2',
+    designation: 'Singer',
+    description: 'Perform a variety of music for recordings and live audiences. They audition for positions in choruses, orchestras, bands, plays, and other types of music groups.',
+  };
+
+ 
   return (
-    <>
-    <h1>I am heading one ... from first component</h1>
-    <h2>I am heading second ... from second component</h2>
-    <h3>I am heading third ... from third component</h3>
-    <button>Click me !!</button>
-    </>
-  )
+    <div>
+      <Card user={user1}  />
+      <Card user={user2} />
+    </div>
+  );
 }
+
 

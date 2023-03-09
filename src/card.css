@@ -1,0 +1,18 @@
+.card{
+
+    /* box-shadow: inset; */
+    color: aliceblue;
+    background-color: rgb(175, 49, 175);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+    width : 50vh;
+    
+   }
+   .img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border:  5px solid white;
+   }
+  
