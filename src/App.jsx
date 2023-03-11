@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './Card';
+import Count from './Count'
 
 
 
@@ -21,8 +22,9 @@ import Card from './Card';
  
   return (
     <div>
-      <Card user={user1}  />
-      <Card user={user2} />
+      <Count/>
+      {/* <Card user={user1}  /> */}
+      {/* <Card user={user2} /> */}
     </div>
   );
 }
