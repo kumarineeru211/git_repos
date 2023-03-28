@@ -1,0 +1,176 @@
+.mainHome{
+    width: 100%;
+}
+
+/* +++++++++ intro section ++++++++ */
+
+.introSection{
+    display: flex;
+
+}
+
+.contentPart{
+    width: 50%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 50px;
+}
+
+.contentPart h1{
+    font-size: 34px;
+}
+.contentPart h2{
+    font-size: 30px;
+}
+.contentPart span{
+    color: blueviolet;
+}
+.contentPart p{
+    margin: 15px 0;
+    color: gray;
+    margin-bottom: 25px;
+}
+
+.btn1{
+    background-color: black;
+    padding: 10px 20px;
+    color: aliceblue;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn2{
+    background-color: rgb(196, 196, 196);
+    padding: 10px 20px;
+    margin: 0 20px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.imgPart{
+    width: 50%;
+    /* height: 50% */
+}
+.imgPart img{
+    width: 100%;
+    /* height: 50%; */
+}
+
+/* +++++++++++ course section +++++++++++++ */
+
+.courseSection{
+    width: 100%;
+    margin-top: 20px ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: rgb(236, 236, 236);
+}
+
+.courseSection h1{
+    
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+
+.cardContainer{
+    width: 90%;
+    display: flex;
+
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+
+/* +++++++++++++ Testimonial Section +++++++++++++ */
+
+.testiSection{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+.testiSection h1{
+    font-weight: 500;
+    font-size: 30px;
+    margin: 40px 0;
+}
+
+.testiDiv{
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+}
+
+.testiDiv div{
+    width: 49%;
+    background-color:  rgb(243 244 246);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.testiDiv div p{
+    margin: 28px 0;
+}
+.testiDiv div h3{
+    font-weight: 500;
+}
+
+
+/* ++++++++++++++++ card Component +++++++++++++++++ */
+.cardMain{
+    width: 28%;
+    box-shadow: 0 0 10px black;
+    border-radius: 13px;
+    position: relative;
+    background-color: white;
+}
+.cardMain img{
+    width: 100%;
+    border-radius: 13px;
+    margin-bottom: 5px;
+}
+
+.cardMain div{
+    padding: 20px;
+    margin-bottom: 60px;
+}
+.cardMain p{
+    font-size: 16px;
+    color: rgb(71, 70, 70);
+}
+.cardMain div h3{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.cardMain button{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin-top: 20px;
+
+    padding: 10px 10px;
+    border-radius: 23px;
+    border: 0;
+    outline: none;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+

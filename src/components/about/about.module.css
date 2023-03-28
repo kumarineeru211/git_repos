@@ -1,0 +1,91 @@
+.aboutMain{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutBanner{
+    width: 100%;
+    height: 40vh;
+    background: url('https://cdn.pixabay.com/photo/2020/02/22/08/39/web-4869856__340.jpg');
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0 20px rgb(91, 90, 90);
+    margin-bottom: 30px;
+}
+.aboutBanner h1{
+    color: rgb(247, 246, 249);
+    font-size: 54px;
+}
+
+.aboutDetail{
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.aboutDetailContent{
+    width: 70%;
+}
+.aboutDetailContent h1{
+    font-weight: 500;
+    font-size: 34px;
+}
+.aboutDetailContent p{
+    margin: 25px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.aboutDetailImg{
+    height: 50vh;
+    width: 25%;
+}
+.aboutDetailImg img{
+    height: 100%;
+    width: 100%;
+    border-radius: 23px;
+    box-shadow: 0 0 20px gray;
+}
+
+
+.aboutHistory{
+    width: 88%;
+    margin: 40px 0;
+
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.aboutHistoryImg{
+    width: 30%;
+    height: 60vh;
+    
+}
+.aboutHistoryImg img{
+    width: 100%;
+    height: 100%;
+    border-radius: 33px;
+    box-shadow: 0 0 20px gray;
+}
+
+.aboutHistoryContent{
+    width: 65%;
+}
+.aboutHistoryContent h1{
+    font-weight: 500;
+    font-size: 34px;
+}
+.aboutHistoryContent p{
+    margin: 25px 0;
+    font-size: 18px;
+    line-height: 1.6;
+}
