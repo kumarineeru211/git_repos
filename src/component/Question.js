@@ -7,7 +7,7 @@ export default function Question() {
     const[input,setInput]=useState("")
 
     const number = useRef(Math.round(Math.random()*100));
-    // console.log(number)
+    console.log(number)
 function handleChange(){
     if(input>number.current){
         alert("You guessed a bigger number .")
@@ -16,7 +16,7 @@ function handleChange(){
         alert("You guessed a smaller number .")
     }
     else{
-        alert(`congratulations you guessed the right number in ${count} attempts`)
+        alert(`congratulations you guessed the right number in ${count+1} attempts`)
     }
     setInput(input)
     setCount(count+1)
