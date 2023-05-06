@@ -1,0 +1,8 @@
+#inputBox {
+  width: 40%;
+  height: 4%;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 5px 10px;
+  margin: 0.5rem 0rem;
+}
