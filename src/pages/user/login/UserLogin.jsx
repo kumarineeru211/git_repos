@@ -10,7 +10,7 @@ export default function UserLogin() {
       <h2>User Login</h2>
       <FormInput />
       <FormInput />
-      <Button />
+      <Button value={"Submit"} />
       <span>
         Switch to <Link to="/adminlogin">admin</Link>
       </span>
