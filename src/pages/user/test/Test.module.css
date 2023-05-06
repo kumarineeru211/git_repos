@@ -1,0 +1,29 @@
+.mainBox {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 5rem;
+  /* font-size: 1.5rem; */
+  /* align-items: center;
+    justify-content: center; */
+}
+
+.optionSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+#option {
+  font-size: 1.5rem;
+}
+
+#imgOutline {
+  height: 20rem;
+  width: 20rem;
+}
+
+#imgOutline > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

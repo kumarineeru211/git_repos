@@ -23,7 +23,7 @@ export default function AdminLogin() {
         value={password}
         onChange={(e) => setPassword(e.target.value)}
       />
-      <Button onClick={handleSubmit} />
+      <Button onClick={handleSubmit} value={"Submit"} />
       <span>
         Switch to <Link to="/">User</Link>
       </span>
