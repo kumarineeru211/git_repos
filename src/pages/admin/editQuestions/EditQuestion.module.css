@@ -1,0 +1,26 @@
+.mainBox {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#questionBox {
+  width: 50vw;
+  overflow: scroll;
+}
+
+#OptionBox {
+  width: 50vw;
+  border: 2px solid;
+}
+
+#questionBox {
+  margin: 1rem;
+  width: 100%;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+#queIndex {
+  margin-right: 1rem;
+}
