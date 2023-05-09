@@ -1,0 +1,13 @@
+.mainBox {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#foot {
+  position: fixed;
+  bottom: 5rem;
+  right: 5rem;
+}

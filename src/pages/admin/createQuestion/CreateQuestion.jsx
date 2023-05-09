@@ -2,28 +2,54 @@ import React, { useState } from "react";
 import style from "./CreateQuestion.module.css";
 import Button from "../../../components/button/Button";
 import FormInput from "../../../components/formInput/FormInput";
-import { useDispatch } from "react-redux";
-import { addQuestion } from "../../../state/QuestionSlice";
+import { getLocalData } from "../../../Utils";
+import { useNavigate } from "react-router-dom";
 
 export default function CreateQuestion() {
   const [questionData, setQuestion] = useState("");
   const [option1, setOption1] = useState("");
-  const [question2, setOption2] = useState("");
-  const [question3, setOption3] = useState("");
-  const [question4, setOption4] = useState("");
-  const [corrctAnsIdx, setCorrectAnsIdx] = useState(0);
-  const dispatch = useDispatch();
+  const [option2, setOption2] = useState("");
+  const [option3, setOption3] = useState("");
+  const [option4, setOption4] = useState("");
+  const [corrctAnsIdx, setCorrectAnsIdx] = useState(null);
+  const [imageUrl, setImageUrl] = useState("");
+  const navigate = useNavigate();
 
   function handleQuestionAdd() {
     const questionObj = {
       question: questionData,
       correct_answer: corrctAnsIdx,
-      options: [option1, question2, question3, question4],
+      options: [option1, option2, option3, option4],
+      imageData: imageUrl,
     };
-    // console.log(questionObj);
-    dispatch(addQuestion(questionObj));
+    //get local data
+    if (
+      questionData == "" ||
+      option1 == "" ||
+      option2 == "" ||
+      option3 == "" ||
+      option4 == "" ||
+      corrctAnsIdx == null
+    ) {
+      alert("All fields are necessary");
+    } else {
+      const dataFromLocal = getLocalData();
+      let finaldata = [...dataFromLocal, questionObj];
+      localStorage.setItem("queArr", JSON.stringify(finaldata));
+      const x = getLocalData();
+      console.log(x);
+      navigate("/adminhome");
+    }
+  }
+  // checking if data is not empty then dont push data to local storage
 
-    ///data in receiving inreducer but not sure about setting in data array
+  function handleImagePick(e) {
+    const image = e.target.files[0];
+    const reader = new FileReader();
+    reader.readAsDataURL(image);
+    reader.onload = function () {
+      setImageUrl(reader.result);
+    };
   }
 
   return (
@@ -59,7 +85,13 @@ export default function CreateQuestion() {
         type={"number"}
       />
       <input type="file" />
-      <Button onClick={handleQuestionAdd} value={"Submit"} />
+      <Button
+        onChange={(e) => handleImagePick(e)}
+        onClick={handleQuestionAdd}
+        value={"Submit"}
+      />
+      {/* <div>{JSON.stringify(selectData)}</div> */}
+      {/* <div>{" image" + imageUrl}</div> */}
     </div>
   );
 }
